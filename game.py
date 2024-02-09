@@ -42,10 +42,7 @@ def trigger_random_move(player):
         random.choice(stripped_rows_v2)
         )
     return random_move
-    
-def validate_selection():
-    pass
-    
+
 
 def process_move(tile_num, player_symb):
     ''' finds/sets the player's symbol in the chosen tile  '''
@@ -76,10 +73,11 @@ def check_for_win(player):
     diags = "test"
     # return (player,"no_win")
     return (player, "no_win")
-    
+
+
 def toggle_turns(max_moves, player = players[1]):
     ''' recursively toggles play turns across players
-        and manage processes each play
+        and processes each play
     '''
     
     if player is players[1]:
